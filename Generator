@@ -1,0 +1,18 @@
+import os
+import random
+def random_():
+    gender=input("Boy or girl? \n")
+    if gender.lower() == 'boy':
+        os.system('cls')
+        file = open("boy.txt", 'r').read().splitlines()
+        return random.choice(file)
+        input('')
+    elif gender.lower() == 'girl':
+        os.system('cls')
+        file = open('girl.txt','r').read().splitlines()
+        return random.choice(file)
+        input('')
+    else:
+        print("Invalid input")
+print(random_())
+input("")
